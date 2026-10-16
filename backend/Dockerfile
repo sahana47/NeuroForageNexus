@@ -12,6 +12,9 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 
+# Image license metadata
+LABEL org.opencontainers.image.license="MIT"
+
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 
