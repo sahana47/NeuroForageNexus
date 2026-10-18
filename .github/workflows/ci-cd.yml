@@ -7,6 +7,9 @@
   pull_request:
     branches:
       - main
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   frontend-build:
